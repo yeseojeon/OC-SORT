@@ -27,6 +27,9 @@ class KF:
     def update(self):
         self.xk_p = self.estimate()[0]
         self.pk_p = self.estimate()[1]
+
+    def get_prediction(self):
+        return self.xk_p
         
 if __name__ == "__main__":
     def main():
